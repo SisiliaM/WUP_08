@@ -79,3 +79,6 @@ summary.lm(simp)
 
 When using chest to predict length the adjusted R^2 was larger than when using neck to predict length. This shows us that when using chest to predict length is more effective than using neck size. However predicting length using head length was still more effective then using chest size because the adjusted R^2 was larger when using head length then chest size. 
 
+
+The results showed that the most effective method was using head length to predict length. This was the most effective because the adjusted R^2 was the largest and the residual standard error was the smallest. The second best method was using chest size to predict length. The following third best method was to use neck size to predict length. Finally the fourth best method was to use weight to predict length. The least effective method was to use age to predict length because the adjusted R^2 was the smallest and the standard residual error was the largest. 
+
