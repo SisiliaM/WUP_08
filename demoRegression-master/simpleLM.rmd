@@ -42,3 +42,12 @@ summary.lm(simp)
 ```
 
 When comparing length to weight the adjusted R^2 was less than the adjusted R^2 when comparing length and neck size. Which is why using the neck size to help predict length was better than using weight.
+
+```{r}
+simp <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+Predicting length with head length the adjusted R^2 was larger than when we predicted length with neck size. The residual standard error for head length is less than that of the neck size prediction. Which is why predicting length with head length is a better comparison than using neck size to determine length.
