@@ -69,3 +69,13 @@ summary.lm(simp)
 ```
 
 Using head width to predict length was worse than using neck to predict length. This is because the adjusted R^2 was smaller when predicting length with head width and residual standard error was larger. 
+
+```{r}
+simp <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+When using chest to predict length the adjusted R^2 was larger than when using neck to predict length. This shows us that when using chest to predict length is more effective than using neck size. However predicting length using head length was still more effective then using chest size because the adjusted R^2 was larger when using head length then chest size. 
+
